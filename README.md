@@ -4,11 +4,10 @@
 
 This project implements a **Natural Language Processing (NLP) classification system** designed to automatically categorize math word problems into one of **8 distinct academic categories** (e.g., Algebra, Geometry, Arithmetic). 
 
-This is for my participation for [KAChallenges Series: Classifying Math Problems](https://www.kaggle.com/competitions/classification-of-math-problems-by-kasut-academy) by KAUST Academy on Kaggle.
+This is for my participation in [KAChallenges Series: Classifying Math Problems](https://www.kaggle.com/competitions/classification-of-math-problems-by-kasut-academy) by KAUST Academy on Kaggle.
 
 The solution utilizes **transfer learning** by **fine-tuning the `bert-base-uncased` transformer model** on a custom dataset, demonstrating a complete end-to-end machine learning pipeline from data preparation to model deployment and submission.
 
------
 
 ## ✨ Key Features & Results
 
@@ -16,11 +15,11 @@ The solution utilizes **transfer learning** by **fine-tuning the `bert-base-unca
 | :--- | :--- |
 | **Model Architecture** | Fine-tuned **`bert-base-uncased`** for multi-class sequence classification. |
 | **Classification Task** | 8-class text classification (e.g., Algebra, Geometry, Statistics). |
-| **Final Validation Accuracy** | Achieved **\~82.38% accuracy** (Notebook output) on the validation set. |
+| **Validation Accuracy** | Achieved **\~82.38% accuracy** on the validation set in the notebook. |
+| **Test Accuracy** | Achieved **\~84.23% accuracy** on the test set on Kaggle. |
 | **Maturity** | Complete pipeline including preprocessing, custom metric calculation, training, and final submission generation. |
 | **Frameworks** | Built entirely within the **HuggingFace ecosystem** (Transformers, Datasets). |
 
------
 
 ## 🛠️ Technical Stack & Technologies
 
@@ -32,7 +31,6 @@ The solution utilizes **transfer learning** by **fine-tuning the `bert-base-unca
 | **Machine Learning**| scikit-learn (for Label Encoding & Metrics) |
 | **Environment** | Google Colab (using T4 GPU acceleration) |
 
------
 
 ## 💻 Methodology & Pipeline
 
@@ -52,7 +50,6 @@ The project follows a rigorous NLP and deep learning workflow:
 5.  **Submission:**
       * Generated predictions on the `test.csv` dataset and compiled the final results into the required `submission.csv` format for the Kaggle competition.
 
------
 
 ## 🚀 Future Enhancements
 
