@@ -8,3 +8,5 @@ if "widgets" in nb["metadata"]:
 
 nbformat.write(nb, path)
 print("metadata.widgets removed")
+
+python clean_notebook.py
